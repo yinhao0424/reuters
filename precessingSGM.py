@@ -10,7 +10,7 @@ def init_document():
     document = {'identity': dict(), 'topics': [], 'texts': dict()}
     document['identity']['new_id'] = ''
     document['identity']['lewis_split'] = ''
-    document['identity']['topics'] = ''
+    document['identity']['topic'] = ''
 
     document['texts']['title'] = ''
     document['texts']['body'] = ''
@@ -52,7 +52,7 @@ def add_text(document, article):
     if title:
         document['texts']['title'] = title.text
     if body:
-        document['texts']['body'] = body.text
+        document['texts']['body'] = body.text.replace('\n','').replace('\'', '')
 
 
 def parse_documents(path):
@@ -78,7 +78,7 @@ def parse_documents(path):
             add_topic(document, reuter)
             add_text(document, reuter)
             documents['reuters'].append(document)
-        return documents
+    return documents
 
 def output_json(documents,filename = 'reuters.json'):
     """
