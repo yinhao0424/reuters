@@ -1,4 +1,5 @@
 reuters21578
 paper
+result
 *.ipynb
 *.json

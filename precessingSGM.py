@@ -10,7 +10,7 @@ def init_document():
     document = {'identity': dict(), 'topics': [], 'texts': dict()}
     document['identity']['new_id'] = ''
     document['identity']['lewis_split'] = ''
-    document['identity']['topic'] = ''
+    document['identity']['topics'] = ''
 
     document['texts']['title'] = ''
     document['texts']['body'] = ''
