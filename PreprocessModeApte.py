@@ -55,13 +55,13 @@ def modeapte_split(reuters):
 
 def preprocess_df(df):
     """
-
     :param df
     :return:
     """
-    # select topics, id and text.body
-    df = df[['identity.new_id', 'topics', 'texts.body']]
-    df = df.rename(columns={"identity.new_id": "id", "texts.body": "texts"})
+    # select topics, id, text.title and text.body
+    df['texts'] = df['texts.title'] + df['texts.body']
+    df = df[['identity.new_id', 'topics', 'texts']]
+    df = df.rename(columns={"identity.new_id": "id"})
 
     # flatten dataset based on topics
     df = df.explode('topics')
@@ -85,7 +85,7 @@ def generate_final_df(metadata):
 
 def save_csv(reuters_train, reuters_test):
 
-    reuters_train.to_csv('result/reuters__final_train.csv', index=False)
+    reuters_train.to_csv('result/reuters_final_train.csv', index=False)
     reuters_test.to_csv('result/reuters_final_test.csv', index=False)
 
 
