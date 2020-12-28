@@ -78,6 +78,7 @@ def generate_final_df(metadata):
     documents = read_json(metadata)
     reuters = generate_df(documents)
     train,test = modeapte_split(reuters)
+
     reuters_train = preprocess_df(train)
     reuters_test = preprocess_df(test)
 
