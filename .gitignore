@@ -1,6 +1,5 @@
 reuters21578
 paper
-result
 ReutersPreprocess.ipynb
 .ipynb_checkpoints/
 *.json
