@@ -1,8 +1,15 @@
 # reuster
 ***
-- **Goal**:  tag news with high accuracy   
-- **Challanges**:   1. too many classes and they are imbalanced 2. many methods to use (LDA, Embedding, one shot learner, few shot learner, Bert, t-sne, weak supervision) 3. 很多不会   
-- **Experiments**: 1. TF-IDF 2.Multilabel Classification   
+- **Goal**:  tag news
+- **Challanges**:   
+    1. Multiple topics (over 100)
+    2. Imbalanced topics distribution
+    3. One news belong to multiple topics
+
+- **Experiments**: 
+    1. TF-IDF embeding -- base line
+    2. Multilabel classification --  multiple topics / topics overlapping
+    3. Few shot learner
 
 
 ***
