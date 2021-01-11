@@ -1,5 +1,5 @@
-reuters21578
 paper
 ReutersPreprocess.ipynb
 .ipynb_checkpoints/
 *.json
+*.pdf
