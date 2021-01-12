@@ -1,6 +1,6 @@
-# reuters
+# reuters news topic classification
 ***
-- **Goal**:  reuters news classification
+- **Goal**:  reuters news topic classification
 - **Challanges**:   
     - Multiple topics (over 100)
     - Imbalanced topics distribution
