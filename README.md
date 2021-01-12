@@ -7,9 +7,9 @@
     - One news belong to multiple topics
 
 - **Experiments**: 
-    1. TF-IDF embeding -- base line
-    2. First laryer model: Multilabel classification --  multiple topics / topics overlapping
-    3. Seconde laryer model: Few shot learner -- for topics with few training samples
+    - TF-IDF embeding -- base line
+    - First laryer model: Multilabel classification --  multiple topics / topics overlapping
+    - Seconde laryer model: Few shot learner -- for topics with few training samples
 
 
 ***
