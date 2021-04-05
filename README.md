@@ -4,7 +4,7 @@
 - **Challanges**:   
     - Multiple topics (over 100)
     - Imbalanced topics distribution
-    - One news belong to multiple topics
+    - Topic overlapping -- One news belong to multiple topics
 
 - **Experiments**: 
     - TF-IDF embeding -- base line
